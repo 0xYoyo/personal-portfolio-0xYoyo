@@ -8,8 +8,8 @@ function Home() {
     <div className="Home">
       <div className="intro">
         <p>
-          Hi There! <br /> I'm <span>Yoav</span>
-          <br /> A Fullstack developer
+          Hi There! 👋 <br /> I'm <span>Yoav</span>
+          <br /> A Fullstack Developer
         </p>
       </div>
       <Lottie className="developer" animationData={animationData} />

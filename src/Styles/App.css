@@ -12,7 +12,7 @@ html {
 section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  font-size: 4rem;
+  font-size: 3rem;
   height: 90vh;
   box-shadow: 0 0 4px var(--textColor);
   background-color: #575757;
@@ -39,14 +39,28 @@ section {
 
 section > div {
   height: 100%;
-  padding: 2rem;
+  padding: 2rem 8rem;
 }
 
 .Home {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .Home {
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    font-size: 2rem;
+  }
+
+  section > div {
+    padding: 2rem;
+  }
 }
 
 .intro {
