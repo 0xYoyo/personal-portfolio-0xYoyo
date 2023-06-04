@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  background-color: var(--mainColorLight);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 10vh;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  font-size: 4rem;
+  height: 90vh;
+  box-shadow: 0 0 4px var(--textColor);
+}
