@@ -13,6 +13,10 @@
   --mainColorLight: #686868;
   --secondaryColor: #ff6000;
   --textColor: #ffa559;
+  --textureA: #383838 12%, transparent 12.5%, transparent 87%, #383838 87.5%,
+    #383838;
+  --textureB: #38383877 25%, transparent 25.5%, transparent 75%, #38383877 75%,
+    #38383877;
 }
 
 #name-logo {
@@ -21,6 +25,7 @@
 }
 
 header {
+  z-index: 1;
   position: sticky;
   top: 0;
   display: flex;
