@@ -15,6 +15,11 @@ function Nav({ homeRef, aboutRef, projectsRef, contactRef }) {
     navRef.current.classList.toggle("burger-nav");
   };
 
+  const closeNav = () => {
+    if (navRef.current.classList.contains("burger-nav"))
+      navRef.current.classList.toggle("burger-nav");
+  };
+
   const scrollTo = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -26,6 +31,7 @@ function Nav({ homeRef, aboutRef, projectsRef, contactRef }) {
         <button
           className="scroller"
           onClick={() => {
+            closeNav();
             scrollTo(homeRef);
           }}
         >
@@ -37,6 +43,7 @@ function Nav({ homeRef, aboutRef, projectsRef, contactRef }) {
         <button
           className="scroller"
           onClick={() => {
+            closeNav();
             scrollTo(aboutRef);
           }}
         >
@@ -48,6 +55,7 @@ function Nav({ homeRef, aboutRef, projectsRef, contactRef }) {
         <button
           className="scroller"
           onClick={() => {
+            closeNav();
             scrollTo(projectsRef);
           }}
         >
@@ -59,6 +67,7 @@ function Nav({ homeRef, aboutRef, projectsRef, contactRef }) {
         <button
           className="scroller"
           onClick={() => {
+            closeNav();
             scrollTo(contactRef);
           }}
         >

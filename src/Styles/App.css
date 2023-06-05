@@ -37,17 +37,14 @@ section {
   }
 }
 
-section > div {
-  height: 100%;
-  padding: 2rem 8rem;
-}
-
 .Home {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
+  height: 100%;
+  padding: 2rem 8rem;
 }
 
 .developer {
@@ -144,14 +141,11 @@ section > div {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     font-size: 2rem;
+    padding: 2rem;
   }
 
   .wave {
     max-width: 4rem;
-  }
-
-  section > div {
-    padding: 2rem;
   }
 
   .more {
