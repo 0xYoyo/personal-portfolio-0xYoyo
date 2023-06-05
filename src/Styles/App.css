@@ -50,17 +50,8 @@ section > div {
   white-space: nowrap;
 }
 
-@media (max-width: 1024px) {
-  .Home {
-    grid-auto-flow: column;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    font-size: 2rem;
-  }
-
-  section > div {
-    padding: 2rem;
-  }
+.developer {
+  max-height: 100%;
 }
 
 .intro {
@@ -69,13 +60,102 @@ section > div {
   justify-content: center;
   align-items: center;
   color: var(--textColor);
-  font-weight: 600;
+  font-weight: bold;
+  gap: 1.5rem;
+}
+
+.intro > div {
+  border-bottom: 2px inset whitesmoke;
 }
 
 .intro span {
   color: var(--secondaryColor);
 }
+.typewriter {
+  overflow: hidden;
+  padding-right: 4px;
+  border-right: 0.15rem solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 0;
+  animation: typing 3.5s 1s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
 
-.developer {
-  max-height: 100%;
+@keyframes typing {
+  from {
+    opacity: 1;
+    max-width: 0;
+  }
+  to {
+    opacity: 1;
+    max-width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello p {
+  align-self: flex-end;
+}
+
+.wave {
+  max-width: 6rem;
+}
+
+.more {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: var(--secondaryColor);
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: black 0px 0px 2px;
+  border: 2px solid var(--mainColorLight);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.more:hover {
+  background-color: wheat;
+  color: var(--secondaryColor);
+  box-shadow: 0 0 4px whitesmoke;
+}
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+  .Home {
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    font-size: 2rem;
+  }
+
+  .wave {
+    max-width: 4rem;
+  }
+
+  section > div {
+    padding: 2rem;
+  }
+
+  .more {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }

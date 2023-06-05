@@ -38,15 +38,26 @@ header {
   box-shadow: 0 0 4px var(--textColor);
 }
 
-nav a {
+.scroller {
+  background-color: var(--mainColor);
+  outline: none;
+  border: none;
   margin: 0 1rem;
   color: var(--textColor);
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
 }
 
-nav a:hover {
+.scroller span {
+  margin-top: 3px;
+}
+
+.scroller:hover {
+  cursor: pointer;
   border-bottom: 1px solid var(--textColor);
 }
 
@@ -97,7 +108,7 @@ nav {
     right: 2rem;
   }
 
-  nav a {
+  .scroller {
     font-size: 1.7rem;
   }
 }
