@@ -1,19 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/About.css";
+import Personal from "./About-comps/Personal";
+import Professional from "./About-comps/Professional";
 
 function About() {
+  const [chosen, setChosen] = useState("?");
+
+  const handlePersonal = () => {
+    setChosen("Personal");
+  };
+
+  const handleProfessional = () => {
+    setChosen("Professional");
+  };
+
   return (
     <div className="About">
-      <h4>Who is this guy?</h4>
-      <h5>Lets make it simple.</h5>
       <blockquote>
         <q>There are 2 sides to every coin</q>
         <p>- Someone a long time ago</p>
       </blockquote>
 
       <div className="btn-pick">
-        <button className="personal">Personal</button>
-        <button className="professional">Professional</button>
+        <button onClick={handlePersonal}>Personal</button>
+        <button onClick={handleProfessional}>Professional</button>
+      </div>
+      <div className="filler">
+        {(() => {
+          if (chosen === "?") {
+            return <div> ? </div>;
+          } else if (chosen === "Personal") {
+            return <Personal />;
+          } else if (chosen === "Professional") {
+            return <Professional />;
+          }
+        })()}
       </div>
     </div>
   );

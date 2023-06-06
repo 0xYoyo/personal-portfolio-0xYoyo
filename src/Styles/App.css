@@ -135,7 +135,7 @@ section {
 
 /* Media queries */
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .Home {
     grid-auto-flow: column;
     grid-template-columns: auto;

@@ -3,29 +3,25 @@
   font-size: 2.5rem;
   text-shadow: 0 0 2px black;
   padding: 1rem;
-}
-
-.About h4 {
-  color: var(--secondaryColor);
-  font-size: 3rem;
-}
-
-.About h5 {
-  border-bottom: 1px solid whitesmoke;
-  font-size: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 blockquote {
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 q {
   color: var(--secondaryColor);
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  font-style: italic;
 }
 
 blockquote p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .btn-pick {
@@ -37,7 +33,7 @@ blockquote p {
 
 button {
   font-size: 1.5rem;
-  padding: 0.8rem;
+  padding: 0.4rem;
   background-color: var(--secondaryColor);
   color: whitesmoke;
   font-weight: bold;
@@ -61,19 +57,90 @@ button:hover {
   font-weight: 600;
 }
 
+.Personal,
+.Professional {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+}
+
+.card,
+.card .W {
+  font-size: 1.7rem;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .W {
+  padding-top: 1rem;
+}
+
+#desc {
+  padding: 0;
+}
+
+.frontend,
+.backend {
+  display: grid;
+  grid-row: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.left,
+.right {
+  width: auto;
+  height: 15vh;
+}
+
+.Professional .left,
+.Professional .right {
+  height: 10vh;
+}
+
+.swim {
+  margin-bottom: -2rem;
+  margin-top: 1rem;
+}
+
 @media (max-width: 1024px) {
+  .card,
+  .card .W {
+    font-size: 1.5rem;
+  }
+
+  .Personal,
+  .Professional {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
   .About {
     font-size: 1.5rem;
   }
 
-  .About h4 {
-    font-size: 1.8rem;
+  .sports,
+  .non-sports,
+  .frontend,
+  .backend {
+    display: none;
   }
-
-  .About h5 {
-    font-size: 1.2rem;
+  .Personal,
+  .Professional {
+    display: flex;
   }
+}
 
+@media (max-width: 640px) {
   q {
     font-size: 1.3rem;
   }
@@ -85,5 +152,14 @@ button:hover {
   button {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+
+  .card,
+  .card .W {
+    font-size: 1.1rem;
+  }
+
+  #desc {
+    font-size: 0.9rem;
   }
 }
