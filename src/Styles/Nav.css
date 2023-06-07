@@ -78,6 +78,10 @@ nav {
   align-items: center;
 }
 
+.single-proj {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   header .nav-btn {
     display: block;
@@ -110,5 +114,12 @@ nav {
 
   .scroller {
     font-size: 1.7rem;
+  }
+
+  .all-proj {
+    display: none;
+  }
+  .single-proj {
+    display: block;
   }
 }

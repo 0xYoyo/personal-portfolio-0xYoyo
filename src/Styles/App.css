@@ -133,9 +133,29 @@ section {
   box-shadow: 0 0 4px whitesmoke;
 }
 
+.mobile-projects {
+  display: none;
+}
+
 /* Media queries */
 
+@media (max-width: 1024px) {
+  .desktop-projects {
+    display: none;
+  }
+  .mobile-projects {
+    display: flex;
+  }
+}
+
 @media (max-width: 1023px) {
+  .desktop-projects {
+    display: none;
+  }
+  .mobile-projects {
+    display: flex;
+  }
+
   .Home {
     grid-auto-flow: column;
     grid-template-columns: auto;

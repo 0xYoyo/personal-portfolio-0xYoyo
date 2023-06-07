@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import "../Styles/Nav.css";
 
-function Nav({ homeRef, aboutRef, projectsRef, contactRef }) {
+function Nav({ homeRef, aboutRef, projectsRef, contactRef, project1Ref }) {
   const navRef = useRef();
 
   const showNav = () => {
@@ -53,7 +53,7 @@ function Nav({ homeRef, aboutRef, projectsRef, contactRef }) {
           About
         </button>
         <button
-          className="scroller"
+          className="scroller all-proj"
           onClick={() => {
             closeNav();
             scrollTo(projectsRef);
@@ -64,6 +64,20 @@ function Nav({ homeRef, aboutRef, projectsRef, contactRef }) {
           </span>{" "}
           Projects
         </button>
+
+        <button
+          className="scroller single-proj"
+          onClick={() => {
+            closeNav();
+            scrollTo(project1Ref);
+          }}
+        >
+          <span>
+            <AiOutlineFundProjectionScreen />
+          </span>{" "}
+          Projects
+        </button>
+
         <button
           className="scroller"
           onClick={() => {
