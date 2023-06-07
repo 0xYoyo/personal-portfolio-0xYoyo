@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/About.css";
+import clash from "../assets/clash-loop.gif";
 import Personal from "./About-comps/Personal";
 import Professional from "./About-comps/Professional";
 
@@ -28,7 +29,12 @@ function About() {
       <div className="filler">
         {(() => {
           if (chosen === "?") {
-            return <div> ? </div>;
+            return (
+              <div>
+                {" "}
+                <img className="clash" src={clash} alt="clashing characters" />
+              </div>
+            );
           } else if (chosen === "Personal") {
             return <Personal />;
           } else if (chosen === "Professional") {

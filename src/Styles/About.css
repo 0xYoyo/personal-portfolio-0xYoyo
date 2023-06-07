@@ -8,6 +8,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.clash {
+  border-radius: 8rem;
+  margin-top: 2rem;
+  width: 35rem;
 }
 
 blockquote {
@@ -76,6 +83,14 @@ button:hover {
 .card {
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  animation: reveal 1s ease forwards;
+}
+
+@keyframes reveal {
+  100% {
+    opacity: 1;
+  }
 }
 
 .card .W {
@@ -111,15 +126,95 @@ button:hover {
   margin-top: 1rem;
 }
 
+.left {
+  position: relative;
+  left: -50vw;
+  overflow: hidden;
+}
+
+.left:nth-child(1) {
+  animation: slideLeft 1s ease-out 0.5s forwards;
+}
+
+.left:nth-child(2) {
+  animation: slideLeft 1s ease-out 1s forwards;
+}
+
+.left:nth-child(3) {
+  animation: slideLeft 1s ease-out 1.5s forwards;
+}
+
+.left:nth-child(4) {
+  animation: slideLeft 1s ease-out 2s forwards;
+}
+
+@keyframes slideLeft {
+  100% {
+    left: 0;
+  }
+}
+
+.right {
+  position: relative;
+  left: 50vw;
+  overflow: hidden;
+}
+
+.right:nth-child(1) {
+  animation: slideRight 1s ease-out 0.5s forwards;
+}
+
+.right:nth-child(2) {
+  animation: slideRight 1s ease-out 1s forwards;
+}
+
+.right:nth-child(3) {
+  animation: slideRight 1s ease-out 1.5s forwards;
+}
+
+.right:nth-child(4) {
+  animation: slideRight 1s ease-out 2s forwards;
+}
+
+@keyframes slideRight {
+  100% {
+    left: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card,
+  .card .W {
+    font-size: 1.4rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .card,
   .card .W {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .Personal,
   .Professional {
     padding: 0;
+  }
+
+  q {
+    font-size: 1.7rem;
+  }
+
+  blockquote p {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .clash {
+    width: 24rem;
   }
 }
 
@@ -161,5 +256,9 @@ button:hover {
 
   #desc {
     font-size: 0.9rem;
+  }
+
+  .clash {
+    width: 20rem;
   }
 }
