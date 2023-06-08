@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio-0xYoyo/static/css/main.498e46e3.css",
+    "main.js": "/personal-portfolio-0xYoyo/static/js/main.b7875c36.js",
+    "static/js/787.fb771931.chunk.js": "/personal-portfolio-0xYoyo/static/js/787.fb771931.chunk.js",
+    "static/media/clash-loop.gif": "/personal-portfolio-0xYoyo/static/media/clash-loop.811b3ddb6af12166ff61.gif",
+    "static/media/shop-showcase.png": "/personal-portfolio-0xYoyo/static/media/shop-showcase.5ba10fdf5c64e7bd907b.png",
+    "static/media/waldo-showcase.png": "/personal-portfolio-0xYoyo/static/media/waldo-showcase.117fff0149b82d729ff1.png",
+    "static/media/weather-showcase.png": "/personal-portfolio-0xYoyo/static/media/weather-showcase.2662f88f1d8d7507e997.png",
+    "static/media/battleship-showcase.png": "/personal-portfolio-0xYoyo/static/media/battleship-showcase.1058499fbe3cf037644a.png",
+    "static/media/nodejs.svg": "/personal-portfolio-0xYoyo/static/media/nodejs.b0d6c7cead1cf51d8ac0b40bf3637dce.svg",
+    "static/media/express.svg": "/personal-portfolio-0xYoyo/static/media/express.cd3b60936c662a05a1176fb185d01eb2.svg",
+    "static/media/react.svg": "/personal-portfolio-0xYoyo/static/media/react.19df4041a7c4767ba9dfb2ef654fe858.svg",
+    "static/media/mongo.svg": "/personal-portfolio-0xYoyo/static/media/mongo.eb842895e80bd61dd471f2b70345feab.svg",
+    "static/media/javascript.svg": "/personal-portfolio-0xYoyo/static/media/javascript.fef7215d0d3e578f01ad70419d4c4308.svg",
+    "static/media/firebase.svg": "/personal-portfolio-0xYoyo/static/media/firebase.8f69a13150a1594d8fb73df74f12b548.svg",
+    "index.html": "/personal-portfolio-0xYoyo/index.html",
+    "static/media/css.svg": "/personal-portfolio-0xYoyo/static/media/css.315b8fdb9dbf75ae965b80bf368895cd.svg",
+    "static/media/html.svg": "/personal-portfolio-0xYoyo/static/media/html.bfc29cc664956a7748f9ee78fa82ec7b.svg",
+    "main.498e46e3.css.map": "/personal-portfolio-0xYoyo/static/css/main.498e46e3.css.map",
+    "main.b7875c36.js.map": "/personal-portfolio-0xYoyo/static/js/main.b7875c36.js.map",
+    "787.fb771931.chunk.js.map": "/personal-portfolio-0xYoyo/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.498e46e3.css",
+    "static/js/main.b7875c36.js"
+  ]
+}
