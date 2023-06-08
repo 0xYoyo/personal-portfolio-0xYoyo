@@ -20,12 +20,9 @@ function Personal() {
         and <br /> funny (at least that's what my mom says).
         <br />
         <span className="W">Where?</span> Tel Aviv, Israel <br />
-        <span className="W">
-          What <span id="desc">(do I like)</span>?
-        </span>{" "}
-        I love outdoor sports, I do some form of it every single day. <br /> But
-        as a dev, of course I'm also a bit of a nerd so yes, I dabble in reading
-        and gaming. <br />
+        <span className="W">What?</span> I love outdoor sports, I do some form
+        of it every single day. <br /> But as a dev, of course I'm also a bit of
+        a nerd so yes, I dabble in reading and gaming. <br />
         Finally and most importantly- dogs. Love 'em.
       </p>
       <div className="non-sports">

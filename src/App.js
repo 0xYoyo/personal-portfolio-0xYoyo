@@ -3,11 +3,13 @@ import "./Styles/App.css";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
-import Projects from "./components/Projects";
+import Projects1 from "./components/Projects1";
 import About from "./components/About";
 import Project1 from "./components/Projects-comp/Project1";
 import Project2 from "./components/Projects-comp/Project2";
 import Project3 from "./components/Projects-comp/Project3";
+import Projects2 from "./components/Projects2";
+import Project4 from "./components/Projects-comp/Project4";
 
 function App() {
   const homeRef = useRef(null);
@@ -35,7 +37,11 @@ function App() {
         </section>
 
         <section className="desktop-projects" ref={projectsRef}>
-          <Projects />
+          <Projects1 />
+        </section>
+
+        <section className="desktop-projects">
+          <Projects2 />
         </section>
 
         <section className="mobile-projects" ref={project1Ref}>
@@ -46,6 +52,9 @@ function App() {
         </section>
         <section className="mobile-projects">
           <Project3 />
+        </section>
+        <section className="mobile-projects">
+          <Project4 />
         </section>
 
         <section ref={contactRef}>

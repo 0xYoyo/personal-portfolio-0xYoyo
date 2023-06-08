@@ -1,39 +1,37 @@
 import React from "react";
 import "../../Styles/Projects.css";
-import waldoShowcase from "../../assets/waldo-showcase.png";
+import shopShowcase from "../../assets/shop-showcase.png";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
 
 function Project2() {
   return (
-    <div className="project">
+    <div className="project even">
       <div className="description">
-        <h2>Where's Waldo?</h2>
+        <h2>Lumière</h2>
         <p>
-          Using a combination Javascript to pinpoint the findable characters
-          dynamically depending on the user's view port. Real time validation of
-          the user's click location using fetched data that is stored on
-          Firebase's backend servers. And finally, a Pop Up form that will take
-          a user's name and score to store them on Firebase in order to sort and
-          display the top 10.
+          A Boutique French clothing brand Lumière which stands for "Light",
+          shines its way through with an elegant feel and very limited number of
+          handmade exclusive designs that changes seasonally.
         </p>
+        <span>ReactJS & Router, Vanilla CSS, Stripe API</span>
       </div>
       <div className="links">
         <a
-          href="https://github.com/0xYoyo/where-is-waldo-0xYoyo"
+          href="https://github.com/0xYoyo/shopping-cart-0xYoyo"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub /> GitHub
         </a>
         <a
-          href="https://where-is-waldo-92b65.web.app/"
+          href="https://0xyoyo.github.io/shopping-cart-0xYoyo/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaShareSquare /> Demo
         </a>
       </div>
-      <img className="showcase" src={waldoShowcase} alt="waldo showcase" />
+      <img className="showcase" src={shopShowcase} alt="shop showcase" />
     </div>
   );
 }

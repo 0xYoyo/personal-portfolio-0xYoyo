@@ -1,17 +1,15 @@
 import React from "react";
-import Project1 from "./Projects-comp/Project1";
 import "../Styles/Projects.css";
+import Project1 from "./Projects-comp/Project1";
 import Project2 from "./Projects-comp/Project2";
-import Project3 from "./Projects-comp/Project3";
 
-function Projects() {
+function Projects1() {
   return (
     <div className="Projects">
       <Project1 />
       <Project2 />
-      <Project3 />
     </div>
   );
 }
 
-export default Projects;
+export default Projects1;

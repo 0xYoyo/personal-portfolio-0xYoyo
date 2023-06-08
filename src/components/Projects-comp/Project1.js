@@ -5,17 +5,15 @@ import { FaGithub, FaShareSquare } from "react-icons/fa";
 
 function Project1() {
   return (
-    <div className="project">
+    <div className="project odd">
       <div className="description">
         <h2>Where's Waldo?</h2>
         <p>
-          Using a combination Javascript to pinpoint the findable characters
-          dynamically depending on the user's view port. Real time validation of
-          the user's click location using fetched data that is stored on
-          Firebase's backend servers. And finally, a Pop Up form that will take
-          a user's name and score to store them on Firebase in order to sort and
-          display the top 10.
+          Derived from the children's puzzle book and made into an online game.
+          Find the hiding characters on each level as fast as you can to put
+          your name up on the leaderboard!
         </p>
+        <span>ReactJS & Router, Vanilla CSS, Firebase</span>
       </div>
       <div className="links">
         <a
