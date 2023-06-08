@@ -138,6 +138,113 @@ section {
   display: none;
 }
 
+.Contact {
+  padding: 0rem;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+form {
+  padding: 1rem;
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.Contact h3 {
+  margin: 0.5rem;
+  color: var(--secondaryLighter);
+  border-bottom: 1px inset whitesmoke;
+  text-shadow: 0 0 6px black;
+}
+
+.Contact ul {
+  list-style: none;
+  width: 60vw;
+}
+
+.Contact li {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+label {
+  color: var(--textColor);
+  font-size: 2rem;
+  text-shadow: 0 0 6px black;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+}
+.area {
+  width: 100%;
+}
+
+textarea {
+  width: 100% !important;
+  height: 10rem !important;
+  resize: none;
+}
+
+.submitter {
+  font-size: 1.5rem;
+  padding: 0.4rem;
+  background-color: var(--secondaryLighter);
+  color: whitesmoke;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px black;
+  border: 2px solid var(--mainColorLight);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submitter:hover {
+  background-color: wheat;
+  color: var(--secondaryColor);
+  box-shadow: 0 0 4px whitesmoke;
+}
+
+#footer {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  height: 10vh;
+  background-color: var(--mainColorLight);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  gap: 1rem;
+}
+
+#footer a {
+  margin-bottom: -0.6rem;
+  font-size: 1.8rem;
+}
+
+#footer a:hover {
+  border: none;
+}
+
 /* Media queries */
 
 @media (max-width: 1024px) {
@@ -172,5 +279,56 @@ section {
   .more {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    form {
+      padding: 2rem;
+    }
+
+    .Contact h3 {
+      font-size: 2.4rem;
+    }
+
+    label {
+      font-size: 1.8rem;
+    }
+
+    input,
+    textarea {
+      font-size: 1.4rem;
+    }
+
+    .submitter {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    form {
+      padding: 0;
+    }
+
+    .Contact h3 {
+      font-size: 2.2rem;
+    }
+
+    label {
+      font-size: 1.6rem;
+    }
+
+    input,
+    textarea {
+      font-size: 1.2rem;
+    }
+
+    .submitter {
+      font-size: 1.4rem;
+    }
+
+    #footer a {
+      margin-bottom: -0.6rem;
+      font-size: 1.4rem;
+    }
   }
 }
