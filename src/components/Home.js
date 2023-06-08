@@ -35,7 +35,7 @@ function Home({ aboutRef }) {
             aboutRef.current?.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          Discover more!
+          Discover more
         </button>
       </div>
       <Lottie className="developer" animationData={animationData} />

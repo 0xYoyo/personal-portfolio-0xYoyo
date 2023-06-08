@@ -59,6 +59,7 @@ section {
   color: var(--textColor);
   font-weight: bold;
   gap: 1.5rem;
+  text-shadow: 0 0 4px black;
 }
 
 .intro > div {
@@ -117,7 +118,7 @@ section {
 .more {
   font-size: 2rem;
   padding: 1rem;
-  background-color: var(--secondaryColor);
+  background-color: var(--secondaryLighter);
   color: whitesmoke;
   font-weight: bold;
   text-shadow: black 0px 0px 2px;
