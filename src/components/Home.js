@@ -32,7 +32,7 @@ function Home({ aboutRef }) {
         <button
           className="more"
           onClick={() => {
-            aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+            aboutRef.current?.scrollIntoView(true, { behavior: "smooth" });
           }}
         >
           Discover more
