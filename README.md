@@ -14,7 +14,7 @@ It Also features external libraries like Lottie for animations, react-icons for 
 ## Key Features
 
 The app is filled with rich animation and transitions the give a smooth feeling to the user.\
-It is comprised of a single page which contains 4 different sections to shortly cover everything:\
+It is comprised of a single page which contains 4 different sections to shortly cover everything:
 
 - Home
 - About
