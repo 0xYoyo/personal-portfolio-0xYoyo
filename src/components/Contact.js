@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../Styles/App.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
   const form = useRef();
@@ -49,32 +48,6 @@ function Contact() {
         </ul>
         <input className="submitter" type="submit" value="Send" />
       </form>
-      <footer id="footer">
-        <span>
-          <a
-            href="mailto: yoyoworkpc@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            yoyoworkpc@gmail.com
-          </a>{" "}
-        </span>{" "}
-        <span>|</span>
-        <a
-          href="https://github.com/0xYoyo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/yoavzrihan/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-      </footer>
     </div>
   );
 }

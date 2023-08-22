@@ -18,7 +18,7 @@ function About() {
   return (
     <div className="About">
       <blockquote>
-        <q>There are 2 sides to every coin</q>
+        <q>There are 2 sides to every story</q>
         <p>- Someone a long time ago</p>
       </blockquote>
 
