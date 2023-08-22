@@ -10,6 +10,7 @@ import Project2 from "./components/Projects-comp/Project2";
 import Project3 from "./components/Projects-comp/Project3";
 import Projects2 from "./components/Projects2";
 import Project4 from "./components/Projects-comp/Project4";
+import Footer from "./components/Footer";
 
 function App() {
   const homeRef = useRef(null);
@@ -60,6 +61,7 @@ function App() {
         <section ref={contactRef}>
           <Contact />
         </section>
+        <Footer />
       </div>
     </>
   );

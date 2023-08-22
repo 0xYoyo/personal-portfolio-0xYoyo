@@ -13,11 +13,12 @@
   --mainColorLight: #686868;
   --secondaryColor: #ff6000;
   --secondaryLighter: #e56c21;
+  --superLight: #ffe6c7;
   --textColor: #ffa559;
-  --textureA: #383838 12%, transparent 12.5%, transparent 87%, #383838 87.5%,
-    #383838;
-  --textureB: #38383877 25%, transparent 25.5%, transparent 75%, #38383877 75%,
-    #38383877;
+  --textureA: #4d4d4d 12%, transparent 12.5%, transparent 87%, #4d4d4d 87.5%,
+    #4d4d4d;
+  --textureB: #45444477 25%, transparent 25.5%, transparent 75%, #45444477 75%,
+    #45444477;
 }
 
 #name-logo {

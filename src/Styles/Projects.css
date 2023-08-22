@@ -14,7 +14,7 @@
   justify-items: center;
   align-items: center;
   color: var(--textColor);
-  text-shadow: 0 0 4px black;
+  text-shadow: 0 0 1px var(--mainColor);
 }
 
 .odd {

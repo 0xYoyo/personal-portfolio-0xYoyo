@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: var(--mainColorLight);
+  position: relative;
 }
 
 html {
@@ -27,13 +28,18 @@ section {
   animation: bgLoad 2s ease-in-out forwards;
 }
 
+section > div {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 @keyframes bgLoad {
   from {
     opacity: 0;
   }
 
   to {
-    opacity: 0.8;
+    opacity: 0.95;
   }
 }
 
@@ -45,6 +51,7 @@ section {
   white-space: nowrap;
   height: 100%;
   padding: 2rem 8rem;
+  overflow: hidden;
 }
 
 .developer {
@@ -59,7 +66,7 @@ section {
   color: var(--textColor);
   font-weight: bold;
   gap: 1.5rem;
-  text-shadow: 0 0 4px black;
+  text-shadow: 0 0 1px var(--mainColor);
 }
 
 .intro > div {
@@ -121,7 +128,7 @@ section {
   background-color: var(--secondaryLighter);
   color: whitesmoke;
   font-weight: bold;
-  text-shadow: black 0px 0px 2px;
+  text-shadow: 0 0 1px var(--mainColor);
   border: 2px solid var(--mainColorLight);
   border-radius: 1rem;
   cursor: pointer;
@@ -129,7 +136,7 @@ section {
 }
 
 .more:hover {
-  background-color: wheat;
+  background-color: var(--superLight);
   color: var(--secondaryColor);
   box-shadow: 0 0 4px whitesmoke;
 }
@@ -143,6 +150,7 @@ section {
   padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 100%;
   text-align: left;
@@ -163,7 +171,7 @@ form {
   margin: 0.5rem;
   color: var(--secondaryLighter);
   border-bottom: 1px inset whitesmoke;
-  text-shadow: 0 0 6px black;
+  text-shadow: 0 0 1px var(--mainColor);
 }
 
 .Contact ul {
@@ -180,7 +188,7 @@ form {
 label {
   color: var(--textColor);
   font-size: 2rem;
-  text-shadow: 0 0 6px black;
+  text-shadow: 0 0 1px var(--mainColor);
 }
 
 input,
@@ -209,7 +217,7 @@ textarea {
   background-color: var(--secondaryLighter);
   color: whitesmoke;
   font-weight: bold;
-  text-shadow: 0px 0px 4px black;
+  text-shadow: 0 0 1px var(--mainColor);
   border: 2px solid var(--mainColorLight);
   border-radius: 1rem;
   cursor: pointer;
@@ -217,12 +225,17 @@ textarea {
 }
 
 .submitter:hover {
-  background-color: wheat;
+  background-color: var(--superLight);
   color: var(--secondaryColor);
   box-shadow: 0 0 4px whitesmoke;
 }
 
 #footer {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
   font-size: 1.8rem;
   color: whitesmoke;
   height: 10vh;
