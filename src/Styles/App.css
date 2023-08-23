@@ -158,6 +158,11 @@ section > div {
   overflow: hidden;
 }
 
+/* #toast {
+  font-size: 0.5rem;
+  z-index: 9999;
+} */
+
 form {
   padding: 1rem;
   display: flex;
