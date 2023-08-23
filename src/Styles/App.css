@@ -158,11 +158,6 @@ section > div {
   overflow: hidden;
 }
 
-/* #toast {
-  font-size: 0.5rem;
-  z-index: 9999;
-} */
-
 form {
   padding: 1rem;
   display: flex;
@@ -212,7 +207,7 @@ textarea {
 
 textarea {
   width: 100% !important;
-  height: 10rem !important;
+  height: 8rem !important;
   resize: none;
 }
 
@@ -272,21 +267,9 @@ textarea {
   .mobile-projects {
     display: flex;
   }
-}
-
-@media (max-width: 1023px) {
-  .desktop-projects {
-    display: none;
-  }
-  .mobile-projects {
-    display: flex;
-  }
 
   .Home {
-    grid-auto-flow: column;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 2rem;
   }
 
@@ -295,58 +278,59 @@ textarea {
   }
 
   .more {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
   }
 
-  @media (max-width: 768px) {
-    form {
-      padding: 2rem;
-    }
-
-    .Contact h3 {
-      font-size: 2.4rem;
-    }
-
-    label {
-      font-size: 1.8rem;
-    }
-
-    input,
-    textarea {
-      font-size: 1.4rem;
-    }
-
-    .submitter {
-      font-size: 1.6rem;
-    }
+  form {
+    padding: 2rem;
   }
 
-  @media (max-width: 480px) {
-    form {
-      padding: 0;
-    }
+  .Contact h3 {
+    font-size: 2.8rem;
+  }
 
-    .Contact h3 {
-      font-size: 2.2rem;
-    }
+  label {
+    font-size: 1.4rem;
+  }
 
-    label {
-      font-size: 1.6rem;
-    }
+  input,
+  textarea {
+    font-size: 1.2rem;
+  }
 
-    input,
-    textarea {
-      font-size: 1.2rem;
-    }
+  .submitter {
+    font-size: 1.4rem;
+  }
+}
 
-    .submitter {
-      font-size: 1.4rem;
-    }
+@media (max-width: 768px) {
+  .Home {
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 
-    #footer a {
-      margin-bottom: -0.6rem;
-      font-size: 1.4rem;
-    }
+@media (max-width: 480px) {
+  .Home {
+    font-size: 2rem;
+    padding: 1.8rem;
+  }
+  .more {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  form {
+    padding: 0;
+  }
+
+  .Contact h3 {
+    font-size: 2.4rem;
+  }
+
+  #footer a {
+    margin-bottom: -0.6rem;
+    font-size: 1.4rem;
   }
 }
