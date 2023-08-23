@@ -2,7 +2,7 @@
   color: var(--textColor);
   font-size: 2.5rem;
   text-shadow: 0 0 1px var(--mainColor);
-  padding: 1rem;
+  padding: 2rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -129,19 +129,19 @@ button:hover {
 }
 
 .left:nth-child(1) {
-  animation: slideLeft 1s ease-out 0.5s forwards;
+  animation: slideLeft 1s ease-out forwards;
 }
 
 .left:nth-child(2) {
-  animation: slideLeft 1s ease-out 1s forwards;
+  animation: slideLeft 1s ease-out 0.5s forwards;
 }
 
 .left:nth-child(3) {
-  animation: slideLeft 1s ease-out 1.5s forwards;
+  animation: slideLeft 1s ease-out 1s forwards;
 }
 
 .left:nth-child(4) {
-  animation: slideLeft 1s ease-out 2s forwards;
+  animation: slideLeft 1s ease-out 1.5s forwards;
 }
 
 @keyframes slideLeft {
@@ -157,19 +157,19 @@ button:hover {
 }
 
 .right:nth-child(1) {
-  animation: slideRight 1s ease-out 0.5s forwards;
+  animation: slideRight 1s ease-out forwards;
 }
 
 .right:nth-child(2) {
-  animation: slideRight 1s ease-out 1s forwards;
+  animation: slideRight 1s ease-out 0.5s forwards;
 }
 
 .right:nth-child(3) {
-  animation: slideRight 1s ease-out 1.5s forwards;
+  animation: slideRight 1s ease-out 1s forwards;
 }
 
 .right:nth-child(4) {
-  animation: slideRight 1s ease-out 2s forwards;
+  animation: slideRight 1s ease-out 1.5s forwards;
 }
 
 @keyframes slideRight {
@@ -179,9 +179,21 @@ button:hover {
 }
 
 @media (max-width: 1280px) {
+  q {
+    font-size: 2.2rem;
+  }
+
+  blockquote p {
+    font-size: 1.6rem;
+  }
+
   .card,
   .card .W {
     font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 1.2rem;
   }
 }
 
@@ -193,11 +205,11 @@ button:hover {
 
   .Personal,
   .Professional {
-    padding: 0;
+    padding: 0.2rem;
   }
 
   q {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   blockquote p {
@@ -206,11 +218,10 @@ button:hover {
 
   button {
     font-size: 1rem;
-    padding: 0.6rem;
   }
 
   .clash {
-    width: 24rem;
+    width: 28rem;
   }
 }
 
@@ -231,26 +242,31 @@ button:hover {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 481px) {
   q {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+
+  blockquote {
+    padding-bottom: 4px;
   }
 
   blockquote p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   button {
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.45rem;
   }
 
   .card,
   .card .W {
     font-size: 1.1rem;
+    padding-top: 2px;
   }
 
   .clash {
-    width: 20rem;
+    width: 24rem;
   }
 }

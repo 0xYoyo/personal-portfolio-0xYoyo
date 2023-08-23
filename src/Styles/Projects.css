@@ -113,8 +113,31 @@ a:hover {
   }
 
   .project {
-    font-size: 1rem;
-    padding: 0.2rem;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .showcase {
+    height: 26vh;
+  }
+
+  .links {
+    height: 18vh;
+  }
+
+  a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .Projects {
+    padding: 1rem;
+  }
+
+  .project {
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 
   .showcase {
