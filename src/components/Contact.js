@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../Styles/App.css";
 
-function Contact() {
+function Contact({ refProp }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -27,7 +27,7 @@ function Contact() {
   };
 
   return (
-    <div className="Contact">
+    <div className="Contact" ref={refProp}>
       <form ref={form} onSubmit={sendEmail}>
         <h3>Let's get in touch!</h3>
         <ul>
