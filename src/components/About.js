@@ -4,7 +4,7 @@ import clash from "../assets/clash-loop.gif";
 import Personal from "./About-comps/Personal";
 import Professional from "./About-comps/Professional";
 
-function About({ refProp }) {
+function About() {
   const [chosen, setChosen] = useState("?");
 
   const handlePersonal = () => {
@@ -16,7 +16,7 @@ function About({ refProp }) {
   };
 
   return (
-    <div className="About" ref={refProp}>
+    <div className="About">
       <blockquote>
         <q>There are 2 sides to every story</q>
         <p>- Someone a long time ago</p>

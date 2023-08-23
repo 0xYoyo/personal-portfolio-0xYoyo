@@ -3,9 +3,9 @@ import "../../Styles/Projects.css";
 import waldoShowcase from "../../assets/waldo-showcase.png";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
 
-function Project1({ refProp }) {
+function Project1() {
   return (
-    <div className="project odd" ref={refProp}>
+    <div className="project odd">
       <div className="description">
         <h2>Where's Waldo?</h2>
         <p>

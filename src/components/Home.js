@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import animationData from "../assets/developer-animation.json";
 import wave from "../assets/wave-animation.json";
 
-function Home({ aboutRef, refProp }) {
+function Home({ aboutRef }) {
   const ref = useRef(null);
   useEffect(() => {
     setTimeout(() => {
@@ -12,7 +12,7 @@ function Home({ aboutRef, refProp }) {
   }, []);
 
   return (
-    <div className="Home" ref={refProp}>
+    <div className="Home">
       <div className="intro">
         <div>
           <h3 className="hello">

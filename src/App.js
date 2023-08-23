@@ -29,24 +29,24 @@ function App() {
         project1Ref={project1Ref}
       />
       <div className="App">
-        <section>
-          <Home aboutRef={aboutRef} refProp={homeRef} />
+        <section ref={homeRef}>
+          <Home aboutRef={aboutRef} />
         </section>
 
-        <section>
-          <About refProp={aboutRef} />
+        <section ref={aboutRef}>
+          <About />
         </section>
 
-        <section className="desktop-projects">
-          <Projects1 refProp={projectsRef} />
+        <section className="desktop-projects" ref={projectsRef}>
+          <Projects1 />
         </section>
 
         <section className="desktop-projects">
           <Projects2 />
         </section>
 
-        <section className="mobile-projects">
-          <Project1 refProp={project1Ref} />
+        <section className="mobile-projects" ref={project1Ref}>
+          <Project1 />
         </section>
         <section className="mobile-projects">
           <Project2 />
@@ -58,8 +58,8 @@ function App() {
           <Project4 />
         </section>
 
-        <section>
-          <Contact refProp={contactRef} />
+        <section ref={contactRef}>
+          <Contact />
         </section>
         <Footer />
       </div>
