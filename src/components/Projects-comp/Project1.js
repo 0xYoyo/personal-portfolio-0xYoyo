@@ -1,37 +1,43 @@
 import React from "react";
 import "../../Styles/Projects.css";
-import waldoShowcase from "../../assets/waldo-showcase.png";
+import yoyonetShowcase from "../../assets/yoyonet-showcase.png";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
 
 function Project1() {
   return (
     <div className="project odd">
       <div className="description">
-        <h2>Where's Waldo?</h2>
+        <h2>Yoyo Network</h2>
         <p>
-          Derived from the children's puzzle book and made into an online game.
-          Find the hiding characters on each level as fast as you can to put
-          your name up on the leaderboard!
+          A full stack, fully responsive, social networking app that provides
+          users end to end experience of a complete social media platform.
+          <br /> For more information please visit the docs on the github link.
         </p>
-        <span>ReactJS & Router, Vanilla CSS, Firebase</span>
+        <span>
+          <strong>Backend:</strong> Express, NodeJS, MongoDB, Cloudinary{" "}
+        </span>
+        <span>
+          <strong>Frontend:</strong> Javascript, ReactJS, HTML, CSS{" "}
+        </span>
       </div>
       <div className="links">
         <a
-          href="https://github.com/0xYoyo/where-is-waldo-0xYoyo"
+          href="https://github.com/0xYoyo/yoyo-network-0xYoyo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub /> Github
+          <FaGithub /> GitHub
         </a>
         <a
-          href="https://where-is-waldo-92b65.web.app/"
+          href="https://yoyo-network.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaShareSquare /> Demo
+          <FaShareSquare />
+          Demo
         </a>
       </div>
-      <img className="showcase" src={waldoShowcase} alt="waldo showcase" />
+      <img className="showcase" src={yoyonetShowcase} alt="Yoyonet showcase" />
     </div>
   );
 }

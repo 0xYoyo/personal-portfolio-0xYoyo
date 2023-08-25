@@ -1,30 +1,35 @@
 import React from "react";
 import "../../Styles/Projects.css";
-import weatherShowcase from "../../assets/weather-showcase.png";
+import inventoryShowcase from "../../assets/inventory-showcase.png";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
 
 function Project4() {
   return (
     <div className="project even">
       <div className="description">
-        <h2>Weather App</h2>
+        <h2>Inventory Manager</h2>
         <p>
-          Need to know the weather and for some reason the only thing you have
-          accessible is this website? Well then fear no more! You can look up
-          any city in the world to get its current weather stats.
+          A dashboard for business owners to help manage their inventory online.
+          Very simple design, yet contains all the CRUD methods the admin may
+          need.
         </p>
-        <span>Javascript, HTML, CSS, OpenWeather API</span>
+        <span>
+          <strong>Backend:</strong> Express, NodeJS, MongoDB{" "}
+        </span>
+        <span>
+          <strong>Frontend:</strong> Javascript, Pug (Jade), CSS, Bootstrap{" "}
+        </span>
       </div>
       <div className="links">
         <a
-          href="https://github.com/0xYoyo/weather-app-0xyoyo"
+          href="https://github.com/0xYoyo/inventory-application-0xYoyo"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub /> GitHub
         </a>
         <a
-          href="https://0xyoyo.github.io/weather-app-0xyoyo/"
+          href="https://inventory-manager-0xyoyo.up.railway.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,7 +37,11 @@ function Project4() {
           Demo
         </a>
       </div>
-      <img className="showcase" src={weatherShowcase} alt="weather showcase" />
+      <img
+        className="showcase"
+        src={inventoryShowcase}
+        alt="weather showcase"
+      />
     </div>
   );
 }

@@ -1,37 +1,42 @@
 import React from "react";
 import "../../Styles/Projects.css";
-import shopShowcase from "../../assets/shop-showcase.png";
+import waldoShowcase from "../../assets/waldo-showcase.png";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
 
 function Project2() {
   return (
     <div className="project even">
       <div className="description">
-        <h2>Lumière</h2>
+        <h2>Where's Waldo?</h2>
         <p>
-          A Boutique French clothing brand Lumière which stands for "Light",
-          shines its way through with an elegant feel and very limited number of
-          handmade exclusive designs that changes seasonally.
+          A full stack mini-game derived from the popular children's puzzle
+          book. Find the hiding characters on each level as fast as you can to
+          put your name up on the leaderboard!
         </p>
-        <span>ReactJS & Router, Vanilla CSS, Stripe API</span>
+        <span>
+          <strong>Backend:</strong> Firebase, Javascript{" "}
+        </span>
+        <span>
+          <strong>Frontend:</strong> Javascript, ReactJS, HTML, CSS{" "}
+        </span>
       </div>
       <div className="links">
         <a
-          href="https://github.com/0xYoyo/shopping-cart-0xYoyo"
+          href="https://github.com/0xYoyo/where-is-waldo-0xYoyo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub /> GitHub
+          <FaGithub /> Github
         </a>
         <a
-          href="https://0xyoyo.github.io/shopping-cart-0xYoyo/"
+          href="https://where-is-waldo-92b65.web.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaShareSquare /> Demo
         </a>
       </div>
-      <img className="showcase" src={shopShowcase} alt="shop showcase" />
+      <img className="showcase" src={waldoShowcase} alt="waldo showcase" />
     </div>
   );
 }
